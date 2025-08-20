@@ -1,5 +1,11 @@
-import Link from "next/link";
+import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
-  return <Link href={"/home"}>tombol</Link>;
+  return (
+    <>
+      <Navbar />
+      <Header />
+    </>
+  );
 }
