@@ -4,7 +4,7 @@ import Link from "next/link";
 const Welcome = () => {
   return (
     <section className="mb-40">
-      <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-10 md:px-0">
+      <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-5 md:px-0">
         <section className="w-full flex justify-end py-10 md:py-0">
           <section className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md">
             <Image
@@ -60,7 +60,9 @@ const Welcome = () => {
             <section className="mt-16 flex flex-col gap-10 justify-center items-start">
               <section className="flex items-center gap-3 w-fit">
                 <section className="w-7 bg-green-600 h-7 text-white rounded-full flex justify-center items-center">
-                  <i className="fa-solid fa-check text-sm"></i>
+                  <section className="w-12 h-12 flex items-center justify-center">
+                    <i className="fa-solid fa-check text-sm"></i>
+                  </section>
                 </section>
 
                 <p className="text-base font-medium">
@@ -69,7 +71,9 @@ const Welcome = () => {
               </section>
               <section className="flex items-center gap-3 w-fit">
                 <section className="w-7 bg-green-600 h-7 text-white rounded-full flex justify-center items-center">
-                  <i className="fa-solid fa-check text-sm"></i>
+                  <section className="w-12 h-12 flex items-center justify-center">
+                    <i className="fa-solid fa-check text-sm"></i>
+                  </section>
                 </section>
 
                 <p className="text-base font-medium">
