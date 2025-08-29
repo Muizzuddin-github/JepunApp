@@ -87,7 +87,7 @@ const Fasilitas = () => {
                 className="m-auto"
               />
             </section>
-            <p className="font-bold">Sport Foto</p>
+            <p className="font-bold">Spot Foto</p>
             <p className="text-sm">
               Tersedia spot foto estetik untuk abadikan momen liburanmu.
             </p>
