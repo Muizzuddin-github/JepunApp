@@ -6,13 +6,13 @@ const Welcome = () => {
     <section className="mb-40">
       <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-10 md:px-0">
         <section className="w-full flex justify-end py-10 md:py-0">
-          <section className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block">
+          <section className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md">
             <Image
               src="/kamarwelcome.jpg"
               width={300} // ubah sesuai kebutuhan
               height={500} // ubah sesuai kebutuhan
               alt="Living room"
-              className="absolute -bottom-[9.5rem] right-0 h-[18rem]"
+              className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md"
             />
           </section>
 
@@ -34,7 +34,7 @@ const Welcome = () => {
           </section>
         </section>
 
-        <section className="w-full bg-gray-100 px-14 pr-5 py-10 h-fit">
+        <section className="w-full bg-gray-100 px-14 pr-5 py-10 h-fit rounded-r-md">
           <section>
             <h2 className="font-semibold text-4xl">Selamat Datang</h2>
             <p className="font-medium tracking-wider text-lg mt-4">
