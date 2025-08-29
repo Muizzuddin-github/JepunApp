@@ -2,10 +2,9 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { useState } from "react";
 
-
 const nicolas = localFont({
     src: "../../../public/nicolas.woff2",
-})
+});
 const teramo = localFont({
     src: "../../../public/teramo.woff2",
 });
@@ -17,6 +16,7 @@ const images = [
     "/RuangTamu/4.jpeg",
     "/RuangTamu/5.jpeg",
 ];
+
 const RuangTamu = () => {
     const [current, setCurrent] = useState(0);
 
@@ -33,34 +33,41 @@ const RuangTamu = () => {
     };
 
     return (
-        <>
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+        <section className="p-1 md:p-4   flex items-center">
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+
                 {/* Left Section (Text) */}
-                <section className="p-6  rounded-lg">
-                    <h5 className={`${nicolas.className} font-bold text-xl mb-4`}>
+                <section className="p-6 flex flex-col justify-center ">
+                    <h5
+                        className={`${nicolas.className} font-bold text-lg md:text-xl mb-4`}
+                    >
                         Layanan & Fasilitas
                     </h5>
 
-                    <section className="p-4  rounded-lg">
-                        <h1 className={`${teramo.className} font-bold text-2xl`}>
+                    <section className="p-4 rounded-lg">
+                        <h1
+                            className={`${teramo.className} font-bold text-2xl md:text-3xl`}
+                        >
                             Guest Home Jepun
                         </h1>
-                        <h1 className={`${teramo.className} font-bold text-2xl`}>
+                        <h1
+                            className={`${teramo.className} font-bold text-2xl md:text-3xl`}
+                        >
                             Ruang Tamu
                         </h1>
 
-                        <p className="mt-4 text-gray-700">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore minus
-                            itaque assumenda aut velit. Optio laboriosam deleniti vero voluptatem eos
-                            debitis vitae voluptates adipisci assumenda! Vero illum iure voluptate
-                            nulla!
+                        <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+                            minus itaque assumenda aut velit. Optio laboriosam deleniti vero
+                            voluptatem eos debitis vitae voluptates adipisci assumenda! Vero
+                            illum iure voluptate nulla!
                         </p>
 
                         <button
                             type="button"
                             className="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
-                           focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
-                           text-sm px-5 py-2.5 inline-flex items-center"
+                focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+                text-sm md:text-base px-5 py-2.5 inline-flex items-center"
                         >
                             Choose plan
                             <svg
@@ -83,9 +90,9 @@ const RuangTamu = () => {
                 </section>
 
                 {/* Right Section (Carousel) */}
-                <section className="relative   rounded-lg overflow-hidden">
+                <section className="relative  overflow-hidden ">
                     {/* Wrapper */}
-                    <div className="relative h-56 md:h-96">
+                    <div className="relative aspect-video md:aspect-full md:h-full">
                         {images.map((src, index) => (
                             <div
                                 key={index}
@@ -103,12 +110,12 @@ const RuangTamu = () => {
                     </div>
 
                     {/* Indicators */}
-                    <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                    <div className="absolute z-30 flex -translate-x-1/2 bottom-3 md:bottom-5 left-1/2 space-x-2 md:space-x-3">
                         {images.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => goToSlide(index)}
-                                className={`w-3 h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
                                     }`}
                             ></button>
                         ))}
@@ -117,11 +124,11 @@ const RuangTamu = () => {
                     {/* Prev Button */}
                     <button
                         onClick={prevSlide}
-                        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4"
+                        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-2 md:px-4"
                     >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50">
+                        <span className="inline-flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/30 hover:bg-black/50">
                             <svg
-                                className="w-4 h-4 text-white"
+                                className="w-3 h-3 md:w-4 md:h-4 text-white"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 6 10"
@@ -136,14 +143,15 @@ const RuangTamu = () => {
                             </svg>
                         </span>
                     </button>
+
                     {/* Next Button */}
                     <button
                         onClick={nextSlide}
-                        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4"
+                        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-2 md:px-4"
                     >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 hover:bg-black/50">
+                        <span className="inline-flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/30 hover:bg-black/50">
                             <svg
-                                className="w-4 h-4 text-white"
+                                className="w-3 h-3 md:w-4 md:h-4 text-white"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 6 10"
@@ -160,8 +168,8 @@ const RuangTamu = () => {
                     </button>
                 </section>
             </section>
-        </>
+        </section>
     );
-}
+};
 
 export default RuangTamu;
