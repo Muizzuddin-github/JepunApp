@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Fasilitas = () => {
   return (
-    <section className="px-5 pt-28 pb-40 bg-gray-300">
+    <section className="px-5 pt-28 pb-40 bg-gray-100">
       <section className="flex flex-col items-center">
         <section className="flex flex-col items-center">
           <h2 className="text-3xl font-bold tracking-wider">
