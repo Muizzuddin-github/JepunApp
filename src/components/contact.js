@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 const Contact = () => {
   return (
     <section className="p-5 hidden items-center justify-center md:flex">
