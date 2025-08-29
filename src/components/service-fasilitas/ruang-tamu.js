@@ -1,13 +1,7 @@
 import Image from "next/image";
-import localFont from "next/font/local";
 import { useState } from "react";
 
-const nicolas = localFont({
-    src: "../../../public/nicolas.woff2",
-});
-const teramo = localFont({
-    src: "../../../public/teramo.woff2",
-});
+
 
 const images = [
     "/RuangTamu/1.jpeg",
@@ -39,19 +33,19 @@ const RuangTamu = () => {
                 {/* Left Section (Text) */}
                 <section className="p-6 flex flex-col justify-center ">
                     <h5
-                        className={`${nicolas.className} font-bold text-lg md:text-xl mb-4`}
+                        className={`nicolas font-bold text-lg md:text-xl mb-4`}
                     >
                         Layanan & Fasilitas
                     </h5>
 
                     <section className="p-4 rounded-lg">
                         <h1
-                            className={`${teramo.className} font-bold text-2xl md:text-3xl`}
+                            className={`teramo font-bold text-2xl md:text-3xl`}
                         >
                             Guest Home Jepun
                         </h1>
                         <h1
-                            className={`${teramo.className} font-bold text-2xl md:text-3xl`}
+                            className={`teramo font-bold text-2xl md:text-3xl`}
                         >
                             Ruang Tamu
                         </h1>

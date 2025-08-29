@@ -27,16 +27,15 @@ const OurHome = () => {
     };
     return (
         <>
-            <section>
-                <section className="w-full  px-14 pr-5 py-10 h-fit">
-                    <section className="p-4 text-center ">
-                        <h2 className="  font-semibold text-4xl">A cozy place to rest, just like home</h2>
-                        <p className="  p-3 text-sm font-medium">Our Home</p>
+            <section className="border-2 border-black-400">
+                <section className="w-full border-2 border-amber-400  px-14 pr-5 py-10 h-fit">
+                    <section className="p-2 text-center ">
+                        <h2 className=" nicolas font-semibold text-4xl">A cozy place to rest, just like home</h2>
+                        <p className=" teramo p-2 text-xl font-medium">Our Home</p>
                         <hr className="  m-auto w-40 h-1 rounded-2xl bg-black " />
                     </section>
                 </section>
                 <section>
-                    test
                     <section className=" w-2/3 m-auto grid grid-cols-1 md:grid-cols-2 gap-15 p-4  border-2 border-amber-500">
                         <div className="bg-gray-800 border-3 border-red-600 rounded-lg shadow-sm ">
                             {/* Right Section (Carousel) */}
