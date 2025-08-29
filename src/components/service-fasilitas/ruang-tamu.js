@@ -29,16 +29,15 @@ const RuangTamu = () => {
     return (
         <section className="p-1 md:p-4   flex items-center">
             <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-
                 {/* Left Section (Text) */}
                 <section className="p-6 flex flex-col justify-center ">
                     <h5
-                        className={`nicolas font-bold text-lg md:text-xl mb-4`}
+                        className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
                     >
                         Layanan & Fasilitas
                     </h5>
 
-                    <section className="p-4 rounded-lg">
+                    <section className="p-4 rounded-lg text-coklat_tua">
                         <h1
                             className={`teramo font-bold text-2xl md:text-3xl`}
                         >
@@ -50,7 +49,7 @@ const RuangTamu = () => {
                             Ruang Tamu
                         </h1>
 
-                        <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
+                        <p className="mt-4 text-sm md:text-base leading-relaxed">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
                             minus itaque assumenda aut velit. Optio laboriosam deleniti vero
                             voluptatem eos debitis vitae voluptates adipisci assumenda! Vero
@@ -59,9 +58,9 @@ const RuangTamu = () => {
 
                         <button
                             type="button"
-                            className="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+                            className="mt-6 text-white bg-coklat hover:bg-coklat_tua 
                 focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
-                text-sm md:text-base px-5 py-2.5 inline-flex items-center"
+                text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
                         >
                             Choose plan
                             <svg

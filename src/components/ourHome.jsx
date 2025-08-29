@@ -27,19 +27,19 @@ const OurHome = () => {
     };
     return (
         <>
-            <section className="border-2 border-black-400">
-                <section className="w-full border-2 border-amber-400  px-14 pr-5 py-10 h-fit">
+            <section className="">
+                <section className="w-full p-3">
                     <section className="p-2 text-center ">
-                        <h2 className=" nicolas font-semibold text-4xl">A cozy place to rest, just like home</h2>
-                        <p className=" teramo p-2 text-xl font-medium">Our Home</p>
-                        <hr className="  m-auto w-40 h-1 rounded-2xl bg-black " />
+                        <h2 className=" nicolas font-semibold text-coklat_tua text-4xl">A cozy place to rest, just like home</h2>
+                        <p className=" teramo p-2 text-xl font-medium text-coklat_tua">Our Home</p>
+                        <hr className="  m-auto w-40 h-1 rounded-2xl bg-coklat_tua text-coklat_tua " />
                     </section>
                 </section>
                 <section>
-                    <section className=" w-2/3 m-auto grid grid-cols-1 md:grid-cols-2 gap-15 p-4  border-2 border-amber-500">
-                        <div className="bg-gray-800 border-3 border-red-600 rounded-lg shadow-sm ">
+                    <section className=" w-full sm:w-full lg:w-2/3 m-auto grid grid-cols-1 md:grid-cols-2 gap-15 p-4  ">
+                        <div className="bg-coklat_muda  rounded-lg shadow-sm ">
                             {/* Right Section (Carousel) */}
-                            <section className="relative   rounded-lg overflow-hidden">
+                            <section className="relative overflow-hidden">
                                 {/* Wrapper */}
                                 <div className="relative h-56 md:h-96">
                                     {images.map((src, index) => (
@@ -118,10 +118,11 @@ const OurHome = () => {
 
                             <div className="p-5">
                                 <a href="#">
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-coklat_tua">Standard Double Bed</h5>
                                 </a>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <hr className=" text-coklat_tua" />
+                                <p className="mb-3 font-normal text-coklat ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cumque odit minima omnis aut tenetur aperiam est consectetur amet, tempora ipsam aliquam quo tempore officiis architecto minus doloremque! Incidunt, qui?</p>
+                                <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-coklat_muda bg-coklat rounded-lg hover:bg-coklat_tua focus:ring-4 focus:outline-none  ">
                                     Read more
                                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -129,9 +130,9 @@ const OurHome = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="bg-gray-800 border-3 border-red-600 rounded-lg shadow-sm ">
+                        <div className="bg-coklat_muda  rounded-lg shadow-sm ">
                             {/* Right Section (Carousel) */}
-                            <section className="relative   rounded-lg overflow-hidden">
+                            <section className="relative overflow-hidden">
                                 {/* Wrapper */}
                                 <div className="relative h-56 md:h-96">
                                     {images.map((src, index) => (
@@ -210,10 +211,11 @@ const OurHome = () => {
 
                             <div className="p-5">
                                 <a href="#">
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-coklat_tua">Standard Single Bed</h5>
                                 </a>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                                <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <hr className=" text-coklat_tua" />
+                                <p className="mb-3 font-normal text-coklat ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste cumque odit minima omnis aut tenetur aperiam est consectetur amet, tempora ipsam aliquam quo tempore officiis architecto minus doloremque! Incidunt, qui?</p>
+                                <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-coklat_muda bg-coklat rounded-lg hover:bg-coklat_tua focus:ring-4 focus:outline-none  ">
                                     Read more
                                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -221,6 +223,7 @@ const OurHome = () => {
                                 </a>
                             </div>
                         </div>
+
 
                     </section>
 

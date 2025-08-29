@@ -117,7 +117,7 @@ const RuangMakan = () => {
 
                     {/* Right Section (Carousel) */}
 
-                    <section className="p-6 flex flex-col justify-center ">
+                    <section className="text-coklat_tua p-6 flex flex-col justify-center ">
                         <h5
                             className={`nicolas font-bold text-lg md:text-xl mb-4`}
                         >
@@ -136,7 +136,7 @@ const RuangMakan = () => {
                                 Ruang Makan & Dapur
                             </h1>
 
-                            <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
+                            <p className="mt-4  text-sm md:text-base leading-relaxed">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
                                 minus itaque assumenda aut velit. Optio laboriosam deleniti vero
                                 voluptatem eos debitis vitae voluptates adipisci assumenda! Vero
@@ -145,9 +145,9 @@ const RuangMakan = () => {
 
                             <button
                                 type="button"
-                                className="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 
+                                className="mt-6 text-coklat_muda bg-coklat hover:bg-coklat_tua 
                         focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
-                        text-sm md:text-base px-5 py-2.5 inline-flex items-center"
+                        text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
                             >
                                 Choose plan
                                 <svg
