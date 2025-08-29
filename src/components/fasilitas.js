@@ -2,18 +2,18 @@ import Image from "next/image";
 
 const Fasilitas = () => {
   return (
-    <section className="px-5 pt-28 pb-40 bg-gray-100">
+    <section className="px-5 pt-28 pb-40 bg-coklat_muda">
       <section className="flex flex-col items-center">
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center text-coklat_tua">
           <h2 className="text-3xl font-bold tracking-wider">
             Fasilitas Unggulan
           </h2>
-          <p className="font-bold text-sm text-gray-500 mt-2">
+          <p className="font-bold text-sm  mt-2">
             Semua Yang Anda Butuhkan Ada di Rumah
           </p>
         </section>
 
-        <section className="flex flex-wrap w-3/4 mt-5 justify-around items-center">
+        <section className="text-coklat_tua flex flex-wrap w-3/4 mt-5 justify-around items-center">
           <section className="w-72 mt-14 text-center">
             <section className="mb-1">
               <Image

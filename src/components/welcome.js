@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Welcome = () => {
   return (
-    <section className="mb-4 md:mb-40 border-2 border-blue-500">
+    <section className="mb-2 md:mb-2 lg:mb-32">
       <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-5 md:px-0">
         <section className="w-full flex justify-end py-10 md:py-0">
           <section className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md">
@@ -34,20 +34,20 @@ const Welcome = () => {
           </section>
         </section>
 
-        <section className="w-full bg-gray-100 px-14 pr-5 py-10 h-fit rounded-md md:rounded-r-md">
-          <section>
-            <h2 className="nicolas font-semibold text-4xl">Selamat Datang</h2>
-            <p className="teramo font-medium tracking-wider text-lg mt-4 border-2 border-amber-400">
+        <section className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r-md">
+          <section className="">
+            <h2 className="nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">Selamat Datang</h2>
+            <p className="teramo font-medium tracking-wider md:text-[18px] text-[14px] mt-4 text-coklat_tua ">
               Tentang Kami
             </p>
           </section>
           <section className="mt-5">
-            <p className="teramo font-medium text-xl leading-7">
+            <p className="teramo font-medium md:text-[16px] text-[14px] leading-7 text-coklat_tua">
               Pondok Jepun, Nyaman Seperti di Rumah Sendiri Strategis, Tenang,
               dan Dekat ke Semua Destinasi
             </p>
 
-            <p className="teramo font-semibold text-base leading-7 mt-5">
+            <p className="teramo md:text-[16px] text-[14px] leading-7 mt-5 text-coklat_tua">
               Nikmati pengalaman menginap yang nyaman dan tenang di Guest House
               Pondok Jepun, sebuah penginapan bergaya homy yang terletak
               strategis di jantung kota Banyuwangi. Dikelilingi oleh pesona alam
@@ -56,25 +56,24 @@ const Welcome = () => {
               bisnis Anda.
             </p>
 
-            <section className="mt-10 flex flex-col gap-10 justify-center items-start">
+            <section className=" mt-10 flex flex-col gap-5 justify-center items-start">
               <section className="flex items-center gap-3 w-fit">
-                <section className="w-7 bg-green-600 h-7 text-white rounded-full flex justify-center items-center">
+                <section className="w-7 bg-coklat_tua h-7 text-white rounded-full flex justify-center items-center">
                   <section className="w-12 h-12 flex items-center justify-center">
                     <i className="fa-solid fa-check text-sm"></i>
                   </section>
                 </section>
-                <p className="teramo text-base font-medium">
+                <p className="teramo md:text-[16px] text-[14px] font-medium text-coklat_tua">
                   Menyuguhkan kamar yang nyaman, bersih, dan menenangkan.
                 </p>
               </section>
-              <section className="flex items-center gap-3 w-fit">
-                <section className="w-7 bg-green-600 h-7 text-white rounded-full flex justify-center items-center">
-                  <section className="w-12 h-12 flex items-center justify-center">
+              <section className="flex items-center gap-3 w-fit ">
+                <section className="w-7 bg-coklat_tua h-7 text-white rounded-full flex justify-center items-center">
+                  <section className="w-12 h-12 flex items-center justify-center ">
                     <i className="fa-solid fa-check text-sm"></i>
                   </section>
                 </section>
-
-                <p className="teramo text-base font-medium">
+                <p className="teramo md:text-[16px] text-[14px] font-medium text-coklat_tua">
                   Kamar utama nyaman dengan AC, TV, dan water heater.
                 </p>
               </section>
@@ -82,7 +81,7 @@ const Welcome = () => {
 
             <Link
               href="/"
-              className="mt-16 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 "
+              className="mt-16 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-coklat_muda rounded-lg bg-coklat hover:bg-coklat_tua "
             >
               Jelajahi Sekarang
               <svg

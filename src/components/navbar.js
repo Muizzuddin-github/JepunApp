@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-coklat_muda">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center">
         <Link
           href="/"
@@ -15,7 +15,7 @@ export default function Navbar() {
             className="h-8"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="teramo self-center text-2xl font-bold whitespace-nowrap text-coklat">
             Jepun
           </span>
         </Link>
@@ -44,36 +44,36 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4   rounded-lg bg-coklat_muda md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-coklat_muda">
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+              <Link
+                href="/"
+                className="block py-2 px-3 text-coklat rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0"
                 aria-current="page"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className=" block py-2 px-3 text-coklat rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 About
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <Link
+                href="/service-fasilitas"
+                className="block py-2 px-3 text-coklat rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
-                Services
-              </a>
+                Services & Facilities
+              </Link>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-coklat rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 Pricing
               </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-coklat rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 Contact
               </a>
