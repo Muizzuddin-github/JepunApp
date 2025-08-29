@@ -5,7 +5,7 @@ import Header from "@/components/header"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
-import MejaMakan from "@/components/service-fasilitas/meja-makan";
+import MejaMakan from "@/components/service-fasilitas/ruang-makan";
 
 
 export default function Service_Fasilitas() {

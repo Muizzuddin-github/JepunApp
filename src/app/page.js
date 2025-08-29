@@ -7,6 +7,8 @@ import Fasilitas from "@/components/fasilitas";
 import Welcome from "@/components/welcome";
 import OurHome from "@/components/ourHome";
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
+import RuangMakan from "@/components/service-fasilitas/ruang-makan";
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
       <Welcome />
       <OurHome />
       <RuangTamu />
+      <RuangMakan />
       <Fasilitas />
       <Footer />
     </>

@@ -5,6 +5,32 @@
   --foreground: #171717;
 }
 
+/* globals.css */
+@font-face {
+  font-family: "Nicolas";
+  src: url("/nicolas.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* supaya gampang dipakai */
+.nicolas {
+  font-family: "Nicolas", sans-serif;
+}
+
+/* globals.css */
+@font-face {
+  font-family: "Teramo";
+  src: url("/teramo.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* contoh penggunaan */
+.teramo {
+  font-family: "Teramo", sans-serif;
+}
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
