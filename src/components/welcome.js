@@ -34,7 +34,7 @@ const Welcome = () => {
           </section>
         </section>
 
-        <section className="w-full bg-gray-300 px-14 pr-5 py-10 h-fit">
+        <section className="w-full bg-gray-100 px-14 pr-5 py-10 h-fit">
           <section>
             <h2 className="font-semibold text-4xl">Selamat Datang</h2>
             <p className="font-medium tracking-wider text-lg mt-4">
