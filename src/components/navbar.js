@@ -66,8 +66,8 @@ export default function Navbar() {
               >
                 <p
                   className={`text-coklat border-b-2  ${pathname === "/"
-                      ? "  border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
+                    ? "  border-b-coklat"
+                    : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                 >
                   Home
@@ -76,16 +76,16 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/accomodation"
                 className=" block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 <p
                   className={`text-coklat border-b-2  ${pathname === "/about"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
+                    ? "border-b-coklat"
+                    : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                 >
-                  About
+                  Accomodation
                 </p>
               </Link>
             </li>
@@ -96,8 +96,8 @@ export default function Navbar() {
               >
                 <p
                   className={`text-coklat border-b-2 ${pathname === "/service-fasilitas"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
+                    ? "border-b-coklat"
+                    : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                 >
                   Services & Facilities
@@ -111,8 +111,8 @@ export default function Navbar() {
               >
                 <p
                   className={`text-coklat border-b-2  ${pathname === "/pricing"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
+                    ? "border-b-coklat"
+                    : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                 >
                   Pricing
@@ -126,8 +126,8 @@ export default function Navbar() {
               >
                 <p
                   className={`text-coklat border-b-2 ${pathname === "/contact"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
+                    ? "border-b-coklat"
+                    : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                 >
                   Contact

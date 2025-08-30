@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 
 import ContactHead from "@/components/contact/ContactHead";
 import ContactForm from "@/components/contact/ContactForm";
+import ContactMaps from "@/components/contact/ContactMaps";
 
 
 
@@ -21,6 +22,7 @@ export default function Kontak() {
         <Navbar />
         <ContactHead />
         <ContactForm />
+        <ContactMaps />
         <Footer />
     </>
 }
