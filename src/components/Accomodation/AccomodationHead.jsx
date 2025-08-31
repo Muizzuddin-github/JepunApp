@@ -14,6 +14,7 @@ const AccomodationHead = () => {
           Kami menyediakan berbagai tipe kamar dengan suasana yang homey dan
           tenang, cocok untuk istirahat, liburan, maupun perjalanan bisnis.
         </p>
+        <hr className="h-0.5 w-28 bg-white rounded-full m-auto text-white" />
       </div>
     </section>
   );
