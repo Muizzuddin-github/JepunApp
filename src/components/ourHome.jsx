@@ -46,7 +46,7 @@ const OurHome = () => {
       </section>
 
       <section>
-        <section className="w-full sm:w-full lg:w-2/3 m-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
+        <section className="w-full sm:w-full lg:w-2/3 m-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-4 overflow-hidden">
           {/* CARD 1 */}
           <div
             className="bg-white rounded-md overflow-hidden"

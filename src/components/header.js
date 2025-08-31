@@ -1,8 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <section className="bg-cover h-[50vh] lg:h-[65vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply">
+    <section className="h-[50vh] lg:h-[65vh] relative">
+      <Image
+        src="/house.jpeg"
+        fill
+        alt="Living room"
+        className="m-auto bg-cover bg-center object-cover  "
+      />
+      <div className="absolute inset-0 bg-black/50" />
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
