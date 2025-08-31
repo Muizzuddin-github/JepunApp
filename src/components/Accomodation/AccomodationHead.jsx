@@ -2,7 +2,7 @@ const Gambar = "/RuangTamu/1.jpeg";
 
 const AccomodationHead = () => {
   return (
-    <section className=" bg-cover h-[40vh] lg:h-[55vh] bg-center bg-no-repeat bg-[url('/Accomodation/538117500.jpg')] bg-black/50  bg-blend-multiply content-center will-change-transform bg-fixed">
+    <section className=" bg-cover h-[40vh] lg:h-[55vh] bg-center bg-no-repeat bg-[url('/Accomodation/538117500.jpg')] bg-black/50  bg-blend-multiply content-center">
       <div
         // data-aos-duration="1500"
         className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
