@@ -24,7 +24,7 @@ const Welcome = () => {
               width={300}
               height={500}
               alt="Living room"
-              className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md"
+              className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md rounded-br-md"
               data-aos-easing="linear"
               data-aos="fade-up"
             />

@@ -1,9 +1,18 @@
-const Gambar = "/RuangTamu/1.jpeg";
+import Image from "next/image";
 
 const AccomodationHead = () => {
   return (
-    <section className=" bg-cover h-[40vh] lg:h-[55vh] bg-center bg-no-repeat bg-[url('/Accomodation/538117500.jpg')] bg-black/50  bg-blend-multiply content-center">
+    <section className="h-[50vh] lg:h-[65vh] relative">
+      <Image
+        src="/Accomodation/538117500.jpg"
+        fill
+        alt="Living room"
+        className="m-auto bg-cover bg-center object-cover  "
+      />
+      <div className="absolute inset-0 bg-black/50" />
       <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
         // data-aos-duration="1500"
         className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
       >
@@ -14,7 +23,6 @@ const AccomodationHead = () => {
           Kami menyediakan berbagai tipe kamar dengan suasana yang homey dan
           tenang, cocok untuk istirahat, liburan, maupun perjalanan bisnis.
         </p>
-        <hr className="h-0.5 w-28 bg-white rounded-full m-auto text-white" />
       </div>
     </section>
   );
