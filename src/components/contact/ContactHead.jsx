@@ -1,6 +1,6 @@
 const ContactHead = () => {
   return (
-    <section className="bg-cover h-[40vh] lg:h-[55vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply content-center will-change-transform bg-fixed">
+    <section className="bg-cover h-[40vh] lg:h-[55vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply content-center ">
       <div className=" p-10 text-center ">
         <h1 className="nicolas mb-4 md:text-[52px]  text-[32px] tracking-tight leading-none text-white   drop-shadow-lg">
           Contact Page
