@@ -10,7 +10,7 @@ const Welcome = () => {
             data-aos="fade-right"
             data-aos-easing="linear"
             // data-aos-duration="1500"
-            className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md "
+            className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md will-change-transform bg-fixed"
           >
             <Image
               src="/kamarwelcome.jpg"
