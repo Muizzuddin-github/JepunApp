@@ -30,7 +30,7 @@ const Welcome = () => {
             />
           </section>
 
-          <section className="flex flex-wrap gap-5 md:hidden ">
+          <section className="flex flex-wrap gap-5 md:hidden overflow-hidden">
             <Image
               data-aos="fade-up"
               data-aos-easing="linear"
@@ -54,7 +54,7 @@ const Welcome = () => {
           </section>
         </section>
 
-        <section className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r-md">
+        <section className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r- overflow-hidden">
           <section
             data-aos="fade-left"
             data-aos-easing="linear"
