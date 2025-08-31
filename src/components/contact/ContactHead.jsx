@@ -1,11 +1,29 @@
+import Image from "next/image";
+
 const ContactHead = () => {
   return (
-    <section className="bg-cover h-[40vh] lg:h-[55vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply content-center ">
-      <div className=" p-10 text-center ">
-        <h1 className="nicolas mb-4 md:text-[52px]  text-[32px] tracking-tight leading-none text-white   drop-shadow-lg">
+    <section className="h-[50vh] lg:h-[65vh] relative">
+      <Image
+        src="/Accomodation/538117500.jpg"
+        fill
+        alt="Living room"
+        className="m-auto bg-cover bg-center object-cover  "
+      />
+      <div className="absolute inset-0 bg-black/50" />
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        // data-aos-duration="1500"
+        className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
+      >
+        <h1 className="nicolas mb-4 md:text-[52px]  text-[32px] font-extrabold tracking-tight leading-none text-white   drop-shadow-lg">
           Contact Page
         </h1>
-        <hr className="h-0.5  w-28 bg-white  rounded-full m-auto text-white" />
+        <p className="teramo mb-8 md:text-[18px] text-[14px] text-white sm:px-16 lg:px-48 drop-shadow-md ">
+          Punya pertanyaan tentang kamar, fasilitas, atau ketersediaan? Jangan
+          ragu untuk menghubungi kami. Tim kami siap membantu memberikan
+          informasi terbaik agar pengalaman menginap Anda lebih nyaman.
+        </p>
       </div>
     </section>
   );

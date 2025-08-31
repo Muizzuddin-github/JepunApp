@@ -10,14 +10,21 @@ const Welcome = () => {
             data-aos="fade-right"
             data-aos-easing="linear"
             // data-aos-duration="1500"
-            className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md will-change-transform bg-fixed"
+            className="relative hidden md:block w-full h-[40rem] -top-10 "
           >
             <Image
-              src="/kamarwelcome.jpg"
-              width={300} // ubah sesuai kebutuhan
-              height={500} // ubah sesuai kebutuhan
+              src="/house.jpeg"
               alt="Living room"
-              className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md"
+              fill
+              className="object-cover object-center rounded-md"
+            />
+
+            <Image
+              src="/kamarwelcome.jpg"
+              width={300}
+              height={500}
+              alt="Living room"
+              className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md rounded-br-md"
               data-aos-easing="linear"
               data-aos="fade-up"
             />

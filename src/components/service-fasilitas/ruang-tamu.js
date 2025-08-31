@@ -26,7 +26,7 @@ const RuangTamu = () => {
   };
 
   return (
-    <section className="p-1 md:p-4   flex items-center">
+    <section className="p-1 md:p-4 flex items-center overflow-hidden">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Left Section (Text) */}
         <section
