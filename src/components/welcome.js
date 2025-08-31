@@ -6,30 +6,38 @@ const Welcome = () => {
     <section className="mb-2 md:mb-2 lg:mb-32">
       <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-5 md:px-0 ">
         <section className="w-full flex justify-end py-10 md:py-0">
-          <section data-aos="fade-right" data-aos-easing="linear"
-            data-aos-duration="1500"
-            className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md ">
+          <section
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            // data-aos-duration="1500"
+            className="bg-[url('/house.jpeg')] w-full bg-cover bg-no-repeat bg-center h-[40rem] -top-10 relative hidden md:block rounded-l-md rounded-t-md "
+          >
             <Image
               src="/kamarwelcome.jpg"
               width={300} // ubah sesuai kebutuhan
               height={500} // ubah sesuai kebutuhan
               alt="Living room"
               className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md"
+              data-aos-easing="linear"
+              data-aos="fade-up"
             />
           </section>
 
-          <section
-            className="flex flex-wrap gap-5 md:hidden ">
-            <Image data-aos="fade-up" data-aos-easing="linear"
-              data-aos-duration="1500"
+          <section className="flex flex-wrap gap-5 md:hidden ">
+            <Image
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              // data-aos-duration="1500"
               src="/kamarwelcome.jpg"
               width={800} // ubah sesuai kebutuhan
               height={800} // ubah sesuai kebutuhan
               alt="Living room"
               className="m-auto rounded-md"
             />
-            <Image data-aos="fade-up" data-aos-easing="linear"
-              data-aos-duration="2000"
+            <Image
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              // data-aos-duration="2000"
               src="/kamarwelcome2.jpg"
               width={800} // ubah sesuai kebutuhan
               height={800} // ubah sesuai kebutuhan
@@ -39,17 +47,25 @@ const Welcome = () => {
           </section>
         </section>
 
-        <section
-          className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r-md">
-          <section data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1500">
-            <h2 className="nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">Selamat Datang</h2>
+        <section className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r-md">
+          <section
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            // data-aos-duration="1500"
+          >
+            <h2 className="nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">
+              Selamat Datang
+            </h2>
             <p className="teramo font-medium tracking-wider md:text-[18px] text-[14px] mt-4 text-coklat_tua ">
               Tentang Kami
             </p>
           </section>
-          <section data-aos="fade-left" data-aos-easing="linear"
-            data-aos-duration="1500" className="mt-5">
+          <section
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            // data-aos-duration="1500"
+            className="mt-5"
+          >
             <p className="teramo font-medium md:text-[16px] text-[14px] leading-7 text-coklat_tua">
               Pondok Jepun, Nyaman Seperti di Rumah Sendiri Strategis, Tenang,
               dan Dekat ke Semua Destinasi
@@ -88,8 +104,8 @@ const Welcome = () => {
             </section>
 
             <Link
-              href="/"
-              className="mt-16 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-coklat_muda rounded-lg bg-coklat hover:bg-coklat_tua "
+              href="/service-fasilitas"
+              className="mt-16 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-coklat_muda rounded-md bg-coklat hover:bg-coklat_tua "
             >
               Jelajahi Sekarang
               <svg
@@ -111,7 +127,7 @@ const Welcome = () => {
           </section>
         </section>
       </section>
-    </section >
+    </section>
   );
 };
 
