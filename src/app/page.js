@@ -8,9 +8,12 @@ import Welcome from "@/components/welcome";
 import OurHome from "@/components/ourHome";
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
 import RuangMakan from "@/components/service-fasilitas/ruang-makan";
-
-
+import { useEffect } from "react";
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <>
       <Contact />

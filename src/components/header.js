@@ -2,11 +2,13 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <section
-      className="bg-cover h-[50vh] lg:h-[65vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply">
-      <div data-aos="fade-up" data-aos-easing="linear"
-        data-aos-duration="1500"
-        className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+    <section className="bg-cover h-[50vh] lg:h-[65vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        // data-aos-duration="1500"
+        className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
+      >
         <h1 className="nicolas mb-4 md:text-[52px]  text-[32px] font-extrabold tracking-tight leading-none text-white   drop-shadow-lg">
           Guest House Pondok Jepun
         </h1>
@@ -17,8 +19,8 @@ const Header = () => {
         </p>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 px-5">
           <Link
-            href="/"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-coklat_muda rounded-lg bg-coklat hover:bg-coklat_tua "
+            href="/accomodation"
+            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-coklat_muda rounded-md bg-coklat hover:bg-coklat_tua "
           >
             Jelajahi Sekarang
             <svg
