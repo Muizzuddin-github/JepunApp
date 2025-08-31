@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <section className="bg-cover h-[50vh] lg:h-[65vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply ">
+    <section className="bg-cover h-[50vh] lg:h-[65vh] bg-center bg-no-repeat bg-[url('/house.jpeg')] bg-black/50  bg-blend-multiply">
       <div
         data-aos="fade-up"
         data-aos-easing="linear"
