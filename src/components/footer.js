@@ -102,6 +102,11 @@ const Footer = () => {
               <i className="fa-brands fa-x-twitter text-xl"></i>
               <span className="sr-only">Twitter page</span>
             </a>
+
+            <a href="#" className="text-coklat_muda hover:text-white">
+              <i className="fa-brands fa-whatsapp text-xl"></i>
+              <span className="sr-only">Whatsapp page</span>
+            </a>
           </div>
         </div>
       </div>
