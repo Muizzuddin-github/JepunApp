@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from "next/image";
 const images = [
     "/Gallery/gallery (1).jpg",
     "/Gallery/gallery (2).jpg",
@@ -88,10 +88,14 @@ const GalleryFoto = () => {
                         className="flex justify-center items-center cursor-pointer h-80 overflow-hidden "
                         onClick={() => handleOpen(index)}
                     >
-                        <img
+                        <Image
                             src={image}
                             alt={`Gallery ${index}`}
+                            width={400}
+                            height={400}
                             className="w-full h-full object-cover"
+                            placeholder="blur"
+                            blurDataURL="/placeholder.jpg" // bisa bikin 1x1 px base64 juga
                         />
                     </div>
                 ))}
@@ -127,10 +131,12 @@ const GalleryFoto = () => {
                             </span>
                         </button>
 
-                        <img
+                        <Image
                             src={images[selectedIndex]}
                             alt="Selected"
-                            className="max-h-[90vh] max-w-[90vw] object-contain bg-white rounded-lg shadow-lg shadow-white/50"
+                            width={1200}
+                            height={800}
+                            className="max-h-[90vh] max-w-[90vw] object-contain bg-white  shadow-lg shadow-white/50"
                         />
 
                         <button
