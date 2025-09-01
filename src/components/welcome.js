@@ -13,18 +13,18 @@ const Welcome = () => {
             className="relative hidden md:block w-full h-[40rem] -top-10 "
           >
             <Image
-              src="/house.jpeg"
+              src="/LandingPage/NDA_7417.jpg"
               alt="Living room"
               fill
               className="object-cover object-center rounded-md"
             />
 
             <Image
-              src="/kamarwelcome.jpg"
+              src="/LandingPage/NDA_7482.jpg"
               width={300}
               height={500}
               alt="Living room"
-              className="absolute -bottom-[9.5rem] right-0 h-[18rem] rounded-l-md rounded-br-md"
+              className="absolute -bottom-[9.5rem] right-0 h-[18rem] object-cover rounded-l-md rounded-br-md"
               data-aos-easing="linear"
               data-aos="fade-up"
             />
@@ -35,7 +35,7 @@ const Welcome = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               // data-aos-duration="1500"
-              src="/kamarwelcome.jpg"
+              src="/LandingPage/NDA_7417.jpg"
               width={800} // ubah sesuai kebutuhan
               height={800} // ubah sesuai kebutuhan
               alt="Living room"
@@ -45,7 +45,7 @@ const Welcome = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               // data-aos-duration="2000"
-              src="/kamarwelcome2.jpg"
+              src="/LandingPage/NDA_7482.jpg"
               width={800} // ubah sesuai kebutuhan
               height={800} // ubah sesuai kebutuhan
               alt="Living room"
@@ -58,7 +58,7 @@ const Welcome = () => {
           <section
             data-aos="fade-left"
             data-aos-easing="linear"
-            // data-aos-duration="1500"
+          // data-aos-duration="1500"
           >
             <h2 className="nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">
               Selamat Datang

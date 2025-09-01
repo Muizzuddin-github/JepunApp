@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 
 import AccomodationHead from "@/components/Accomodation/AccomodationHead";
 import AccomodationPreview from "@/components/Accomodation/AccomodationPreview";
+import AccomodationFasilitas from "@/components/Accomodation/AccomodationFasilitas";
 
 
 
@@ -21,6 +22,7 @@ export default function Akomodasi() {
         <Navbar />
         <AccomodationHead />
         <AccomodationPreview />
+        <AccomodationFasilitas />
         <Footer />
     </>
 }

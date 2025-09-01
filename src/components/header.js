@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <section className="h-[50vh] lg:h-[65vh] relative">
       <Image
-        src="/house.jpeg"
+        src="/LandingPage/NDA_7431.jpg"
         fill
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
