@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ContactHead = () => {
   return (
-    <section className="h-[50vh] lg:h-[65vh] relative">
+    <section className="h-[40vh] md:h-[65vh] relative">
       <Image
         src="/Contact/NDA_7444.jpg"
         fill
