@@ -2,9 +2,19 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const images1 = ["/RuangTamu/1.jpeg", "/RuangTamu/2.jpeg", "/RuangTamu/3.jpeg"];
+const images1 = [
+  "/KamarDouble/NDA_7483.jpg",
+  "/KamarDouble/NDA_7453.jpg",
+  "/KamarDouble/NDA_7457.jpg",
+  "/KamarDouble/NDA_7481.jpg",
+];
 
-const images2 = ["/RuangTamu/4.jpeg", "/RuangTamu/5.jpeg", "/RuangTamu/1.jpeg"];
+const images2 = [
+  "/KamarDouble/NDA_7483.jpg",
+  "/KamarDouble/NDA_7453.jpg",
+  "/KamarDouble/NDA_7457.jpg",
+  "/KamarDouble/NDA_7481.jpg",
+];
 
 const OurHome = () => {
   const [current1, setCurrent1] = useState(0);
@@ -58,9 +68,8 @@ const OurHome = () => {
                 {images1.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                      index === current1 ? "opacity-100" : "opacity-0"
-                    }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current1 ? "opacity-100" : "opacity-0"
+                      }`}
                   >
                     <Image
                       src={src}
@@ -78,9 +87,8 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide1(index)}
-                    className={`w-3 h-3 rounded-full ${
-                      index === current1 ? "bg-white" : "bg-gray-400"
-                    }`}
+                    className={`w-3 h-3 rounded-full ${index === current1 ? "bg-white" : "bg-gray-400"
+                      }`}
                   ></button>
                 ))}
               </div>
@@ -154,9 +162,8 @@ const OurHome = () => {
                 {images2.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                      index === current2 ? "opacity-100" : "opacity-0"
-                    }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current2 ? "opacity-100" : "opacity-0"
+                      }`}
                   >
                     <Image
                       src={src}
@@ -174,9 +181,8 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide2(index)}
-                    className={`w-3 h-3 rounded-full ${
-                      index === current2 ? "bg-white" : "bg-gray-400"
-                    }`}
+                    className={`w-3 h-3 rounded-full ${index === current2 ? "bg-white" : "bg-gray-400"
+                      }`}
                   ></button>
                 ))}
               </div>

@@ -8,6 +8,8 @@ import Welcome from "@/components/welcome";
 import OurHome from "@/components/ourHome";
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
 import RuangMakan from "@/components/service-fasilitas/ruang-makan";
+import RuangKaraoke from "@/components/service-fasilitas/ruang-karaoke";
+
 import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
@@ -23,6 +25,7 @@ export default function Home() {
       <OurHome />
       <RuangTamu />
       <RuangMakan />
+      <RuangKaraoke />
       <Fasilitas />
       <Footer />
     </>
