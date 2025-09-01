@@ -4,7 +4,7 @@ const GalleryHead = () => {
     return (
         <section className="h-[40vh] md:h-[65vh] relative">
             <Image
-                src="/Gallery/NDA_7473.jpg"
+                src="/Gallery/gallery (16).jpg"
                 fill
                 alt="Living room"
                 className="m-auto bg-cover bg-center object-cover  "
