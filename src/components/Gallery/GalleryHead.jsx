@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GalleryHead = () => {
     return (
-        <section className="h-[50vh] lg:h-[65vh] relative">
+        <section className="h-[40vh] md:h-[65vh] relative">
             <Image
                 src="/Gallery/NDA_7473.jpg"
                 fill

@@ -1,14 +1,8 @@
 import Image from "next/image";
-import localFont from "next/font/local";
 import { useState } from "react";
 import Link from "next/link";
 
-const nicolas = localFont({
-  src: "../../../public/nicolas.woff2",
-});
-const teramo = localFont({
-  src: "../../../public/teramo.woff2",
-});
+import { motion } from "motion/react";
 
 const images = [
   "/RuangMakan/NDA_7437.jpg",
@@ -33,13 +27,19 @@ const RuangMakan = () => {
   };
 
   return (
-    <section className="p-1 md:p-4 flex items-center overflow-hidden">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 2, ease: "easeIn" }}
+      className="p-1 md:p-4 flex items-center overflow-hidden bg-coklat_muda">
       {/* Tampilan Desktop */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Left Section (Carousel) */}
         <section
           className="relative  overflow-hidden content-center hidden md:block "
-          data-aos="fade-left"
+
         >
           {/* Wrapper */}
           <div className="relative aspect-video md:aspect-full md:h-full">
@@ -121,7 +121,7 @@ const RuangMakan = () => {
         {/* Right Section (Text) */}
         <section
           className="p-6 flex-col content-center hidden md:block pl-30 pr-10   "
-          data-aos="fade-up"
+
         >
           <h5
             className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
@@ -177,7 +177,7 @@ const RuangMakan = () => {
         {/* Right Section (Carousel) */}
         <section
           className="relative rounded-md overflow-hidden"
-          data-aos="fade-left"
+
         >
           {/* Wrapper */}
           <div className="relative aspect-video md:aspect-full md:h-full">
@@ -258,7 +258,7 @@ const RuangMakan = () => {
         {/* Left Section (Text) */}
         <section
           className="p-6 flex flex-col justify-center "
-          data-aos="fade-up"
+
         >
           <h5
             className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
@@ -309,7 +309,7 @@ const RuangMakan = () => {
 
 
       </section>
-    </section>
+    </motion.section>
   );
 };
 
