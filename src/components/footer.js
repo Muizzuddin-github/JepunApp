@@ -7,18 +7,18 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <Link href="/" className="flex items-center gap-1">
               <Image
-                src="https://flowbite.com/docs/images/logo.svg"
+                src="/logo.png"
                 className="h-8 me-1"
                 alt="FlowBite Logo"
-                height={100}
-                width={100}
+                height={50}
+                width={35}
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Jepun
               </span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
@@ -48,7 +48,8 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://www.instagram.com/pondok_jepun25"
+                    target="_blank"
                     className="hover:underline "
                   >
                     Instagram
@@ -93,9 +94,13 @@ const Footer = () => {
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-4">
-            <a href="#" className="text-coklat_muda hover:text-white">
+            <a
+              href="https://www.instagram.com/pondok_jepun25"
+              target="_blank"
+              className="text-coklat_muda hover:text-white"
+            >
               <i className="fa-brands fa-instagram text-xl"></i>
-              <span className="sr-only">Facebook page</span>
+              <span className="sr-only">Instagram page</span>
             </a>
 
             <a href="#" className="text-coklat_muda hover:text-white">
