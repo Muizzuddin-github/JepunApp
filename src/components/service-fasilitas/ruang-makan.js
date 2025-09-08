@@ -33,21 +33,20 @@ const RuangMakan = () => {
       exit={{ opacity: 0 }}
       viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 2, ease: "easeIn" }}
-      className="p-1 md:p-4 flex items-center overflow-hidden bg-coklat_muda">
+      className="p-1 md:p-4 flex items-center overflow-hidden bg-coklat_muda"
+    >
       {/* Tampilan Desktop */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Left Section (Carousel) */}
-        <section
-          className="relative  overflow-hidden content-center hidden md:block "
-
-        >
+        <section className="relative  overflow-hidden content-center hidden md:block ">
           {/* Wrapper */}
           <div className="relative aspect-video md:aspect-full md:h-full">
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
-                  }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                  index === current ? "opacity-100" : "opacity-0"
+                }`}
               >
                 <Image
                   src={src}
@@ -65,8 +64,9 @@ const RuangMakan = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
-                  }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
+                  index === current ? "bg-white" : "bg-gray-400"
+                }`}
               ></button>
             ))}
           </div>
@@ -119,10 +119,7 @@ const RuangMakan = () => {
         </section>
 
         {/* Right Section (Text) */}
-        <section
-          className="p-6 flex-col content-center hidden md:block pl-30 pr-10   "
-
-        >
+        <section className="p-6 flex-col content-center hidden md:block pl-30 pr-10   ">
           <h5
             className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
           >
@@ -137,10 +134,10 @@ const RuangMakan = () => {
               Ruang Makan & Dapur
             </h1>
 
-            <p className="mt-4  text-sm md:text-base leading-relaxed">
-              Tempat yang bersih dan tertata rapi untuk Anda menikmati
-              hidangan dan menyiapkan makanan dengan nyaman. Suasana homey
-              yang mendukung kebersamaan dan kepraktisan selama menginap.
+            <p className="mt-4 text-sm md:text-base leading-relaxed">
+              Tempat yang bersih dan tertata rapi untuk Anda menikmati hidangan
+              dan menyiapkan makanan dengan nyaman. Suasana homey yang mendukung
+              kebersamaan dan kepraktisan selama menginap.
             </p>
 
             <Link
@@ -169,23 +166,19 @@ const RuangMakan = () => {
             </Link>
           </section>
         </section>
-
-
       </section>
       {/* Tampilan Mobile */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:hidden ">
         {/* Right Section (Carousel) */}
-        <section
-          className="relative rounded-md overflow-hidden"
-
-        >
+        <section className="relative rounded-md overflow-hidden">
           {/* Wrapper */}
           <div className="relative aspect-video md:aspect-full md:h-full">
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
-                  }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                  index === current ? "opacity-100" : "opacity-0"
+                }`}
               >
                 <Image
                   src={src}
@@ -203,8 +196,9 @@ const RuangMakan = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
-                  }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
+                  index === current ? "bg-white" : "bg-gray-400"
+                }`}
               ></button>
             ))}
           </div>
@@ -256,10 +250,7 @@ const RuangMakan = () => {
           </button>
         </section>
         {/* Left Section (Text) */}
-        <section
-          className="p-6 flex flex-col justify-center "
-
-        >
+        <section className="p-6 flex flex-col justify-center ">
           <h5
             className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
           >
@@ -275,9 +266,9 @@ const RuangMakan = () => {
             </h1>
 
             <p className="mt-4  text-sm md:text-base leading-relaxed">
-              Tempat yang bersih dan tertata rapi untuk Anda menikmati
-              hidangan dan menyiapkan makanan dengan nyaman. Suasana homey
-              yang mendukung kebersamaan dan kepraktisan selama menginap.
+              Tempat yang bersih dan tertata rapi untuk Anda menikmati hidangan
+              dan menyiapkan makanan dengan nyaman. Suasana homey yang mendukung
+              kebersamaan dan kepraktisan selama menginap.
             </p>
 
             <Link
@@ -306,8 +297,6 @@ const RuangMakan = () => {
             </Link>
           </section>
         </section>
-
-
       </section>
     </motion.section>
   );

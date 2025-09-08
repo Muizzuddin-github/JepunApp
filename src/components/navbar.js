@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useRef } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [showHide, setShowHide] = useState(false);
@@ -15,12 +15,14 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center">
         <Link
           href="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse md:hidden"
+          className="flex items-center space-x-3 rtl:space-x-reverse md:hidden gap-2"
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
+          <Image
+            src="/logo.png"
+            className="h-8 me-1"
+            alt="FlowBite Logo"
+            height={50}
+            width={35}
           />
           <span className="teramo self-center text-2xl font-bold whitespace-nowrap text-coklat">
             Jepun
@@ -65,10 +67,11 @@ export default function Navbar() {
                 aria-current="page"
               >
                 <p
-                  className={`text-coklat border-b-2  ${pathname === "/"
-                    ? "  border-b-coklat"
-                    : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                  className={`text-coklat border-b-2  ${
+                    pathname === "/"
+                      ? "  border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                  } `}
                 >
                   Home
                 </p>
@@ -80,10 +83,11 @@ export default function Navbar() {
                 className=" block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 <p
-                  className={`text-coklat border-b-2  ${pathname === "/accomodation"
-                    ? "border-b-coklat"
-                    : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                  className={`text-coklat border-b-2  ${
+                    pathname === "/accomodation"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                  } `}
                 >
                   Accomodation
                 </p>
@@ -95,10 +99,11 @@ export default function Navbar() {
                 className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 <p
-                  className={`text-coklat border-b-2 ${pathname === "/service-fasilitas"
-                    ? "border-b-coklat"
-                    : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                  className={`text-coklat border-b-2 ${
+                    pathname === "/service-fasilitas"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                  } `}
                 >
                   Services & Facilities
                 </p>
@@ -110,10 +115,11 @@ export default function Navbar() {
                 className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 <p
-                  className={`text-coklat border-b-2  ${pathname === "/pricing"
-                    ? "border-b-coklat"
-                    : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                  className={`text-coklat border-b-2  ${
+                    pathname === "/pricing"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                  } `}
                 >
                   Gallery
                 </p>
@@ -125,10 +131,11 @@ export default function Navbar() {
                 className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
               >
                 <p
-                  className={`text-coklat border-b-2 ${pathname === "/contact"
-                    ? "border-b-coklat"
-                    : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                  className={`text-coklat border-b-2 ${
+                    pathname === "/contact"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                  } `}
                 >
                   Contact
                 </p>

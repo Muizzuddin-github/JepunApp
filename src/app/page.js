@@ -11,6 +11,7 @@ import RuangMakan from "@/components/service-fasilitas/ruang-makan";
 import RuangKaraoke from "@/components/service-fasilitas/ruang-karaoke";
 
 import { useEffect } from "react";
+import Video from "@/components/video";
 export default function Home() {
   useEffect(() => {
     document.title = "Home";
@@ -27,6 +28,7 @@ export default function Home() {
       <RuangMakan />
       <RuangKaraoke />
       <Fasilitas />
+      <Video />
       <Footer />
     </>
   );
