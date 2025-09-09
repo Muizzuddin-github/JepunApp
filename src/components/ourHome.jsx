@@ -10,10 +10,10 @@ const images1 = [
 ];
 
 const images2 = [
-  "/KamarDouble/NDA_7483.jpg",
-  "/KamarDouble/NDA_7453.jpg",
-  "/KamarDouble/NDA_7457.jpg",
-  "/KamarDouble/NDA_7481.jpg",
+  "/KamarSingle/NDA_9195.jpg",
+  "/KamarSingle/NDA_9197.jpg",
+  "/KamarSingle/NDA_9202.jpg",
+  "/KamarSingle/NDA_9203.jpg",
 ];
 
 const OurHome = () => {
