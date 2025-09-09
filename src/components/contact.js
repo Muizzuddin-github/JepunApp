@@ -9,8 +9,9 @@ const Contact = () => {
               <i className="fa-solid fa-location-dot text-xl text-coklat"></i>
             </section>
             <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
-              <p>Jawa Timur 68417</p>
-              <p>Kebalenan, Banyuwangi</p>
+              <p>Q85W+R2J, Sumberrejo, Kec. Banyuwangi,</p>
+              <p> Kabupaten Banyuwangi, Jawa Timur</p>
+
             </section>
           </section>
           <section className="flex items-center gap-2">
@@ -19,18 +20,18 @@ const Contact = () => {
             </section>
             <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
               <p>Email Kami</p>
-              <p>ami@example.com</p>
+              <p>pondokjepun25@gmail.com</p>
             </section>
           </section>
         </section>
 
         <section>
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="logo"
-            width={38}
-            height={38}
-            className="w-38"
+            width={20}
+            height={20}
+            className="w-20"
           />
         </section>
 
